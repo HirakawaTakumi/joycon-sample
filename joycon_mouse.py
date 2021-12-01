@@ -11,9 +11,11 @@ async def mouse_event(button_info: dict):
     if button_info['zr'] == 1:
         mouse.click('left')
         print('left clicked!')
+        await asyncio.sleep(0.3)
     elif button_info['r'] == 1:
         mouse.click('right')
         print('right clicked')
+        await asyncio.sleep(0.3)
 
     elif button_info['x'] == 1:
         mouse.wheel(1)
